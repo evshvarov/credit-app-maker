@@ -90,7 +90,7 @@ export function CreditApplicationForm() {
     
     try {
       // Simulate API call - replace with actual endpoint
-      const response = await fetch("https://api.example.com/v1/form/submit", {
+      const response = await fetch("https://loan.demo.community.intersystems.com/loan/api", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
