@@ -7,13 +7,14 @@
       <Description>Frontend for Demo-Loan Interoperability case</Description>
       <Keywords>REST,Frontend,React,Lovable</Keywords>
       <Packaging>module</Packaging>
-      <CSPApplication 
-  Url="/loan"
-  SourcePath="/dist"
-  DeployPath="${cspdir}loan"
-  CookiePath="${cspdir}loan"
+      <FileCopy Name="dist/" Target="{$cspdir}loan/"/>
+      <WebApplication 
+  Name="/loan"
+  NameSpace="{$namespace}"
+  Path="{$cspdir}loan"
   Recurse="1"
   ServeFiles="1"
+  CookiePath="{$cspdir}loan"
   UseCookies="2"
 />
       <SourcesRoot>src</SourcesRoot>
